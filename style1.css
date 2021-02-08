@@ -1,0 +1,63 @@
+body{
+    background-color: #0f1123;
+    text-align: center;
+  }
+  input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  input[type=password], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  div{
+    display: inline-block;
+    padding: 40px;
+  }
+  
+  .he{
+    grid-area: h;
+  }
+  input[type=submit], select {
+    background-color: #0f1123;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  .signup{
+    grid-area: signup;
+    margin-right: 30px;
+    background-color: #a98b98;
+  }
+  .login{
+    grid-area: login;
+    background-color: #a98b98;
+  }
+  .container{
+    align-items: center;
+    display: grid;
+    grid:
+    'h h'
+    'signup login'
+    'signup login';
+    background-color: #4e3d53;
+  
+  }
+  

@@ -1,0 +1,85 @@
+body{
+  background-color: #7c9473;
+}
+ul{
+  list-style-type: none;
+  color: inherit;
+}
+img{
+  width: 150px;
+  height: 150px;
+}
+li{
+  padding: 30px;
+}
+a{
+  color: white;
+  text-decoration: none;
+}
+header{
+  grid-area: h;
+  background-color: #7c9473;
+  margin: 50px;
+}
+.button {
+  background-color: #cdd0cb;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.site-nav{
+  grid-area: sb;
+  background-color:#0f3057;
+  margin-right: 20px;
+  height: 100%;
+}
+.main{
+  grid-area:m;
+  background-color: #cfdac8;
+  margin-right: 20px;
+}
+.Filteritem{
+  display: inline-block;
+}
+.Courses{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.course-card{
+  display: inline-block;
+  margin: 10px;
+  padding: 50px;
+}
+
+.sidebar-top{
+  grid-area:sbt;
+  background-color:#cfdac8;
+  margin-bottom: 20px;
+  height:100%;
+}
+.sidebar-bottom{
+  grid-area:sbb;
+  background-color: #cfdac8;
+  height:100%;
+
+}
+
+
+.container{
+  background-color: #7c9473;
+  display: grid;
+  grid:
+  'sb h h'
+  'sb m sbt'
+  'sb m sbb';
+  grid-template-columns: 1fr 4fr 1fr;
+  font-size: 30px;
+}
